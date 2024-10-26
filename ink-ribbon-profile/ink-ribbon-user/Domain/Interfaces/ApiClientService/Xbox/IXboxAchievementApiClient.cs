@@ -2,7 +2,7 @@
 
 namespace ink_ribbon_profile.Domain.Interfaces.ApiClientService.Xbox
 {
-    public interface IXboxLastSeenApiClient : IServiceClientBase<XboxLastSeenDto>
+    public interface IXboxAchievementApiClient : IServiceClientBase<AchievementDto>
     {
     }
 }

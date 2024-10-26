@@ -15,7 +15,7 @@ namespace ink_ribbon_profile.Infra.Extensions
         {
             return services
                 .AddScoped<ISteamUserSevice, SteamUserService>()
-                .AddScoped<IXboxUserService, XboxUserService>();
+                .AddScoped<IXboxAchievementService, XboxAchievementService>();
         }
     }
 }

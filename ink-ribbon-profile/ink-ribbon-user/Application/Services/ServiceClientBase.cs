@@ -105,7 +105,7 @@ namespace ink_ribbon_profile.Application.Services
             return null;
         }
 
-        public async Task<IEnumerable<TEntity?>> GetListAsync(string url)
+        public async Task<IEnumerable<TEntity>> GetListAsync(string url)
         {
             try
             {

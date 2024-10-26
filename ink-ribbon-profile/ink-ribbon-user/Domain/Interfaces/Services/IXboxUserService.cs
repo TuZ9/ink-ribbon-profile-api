@@ -2,9 +2,11 @@
 
 namespace ink_ribbon_profile.Domain.Interfaces.Services
 {
-    public interface IXboxUserService
+    public interface IXboxAchievementService
     {
-        Task<XboxLastSeenDto> GetLastSeenStatus(string xuid);
-        Task<XboxUserDto> GetUserByGameTag(string gamerTag);
+        Task<AchievementDto> GetAchievementsById(string xuid);
+        Task<AchievementDto> GetAchievements();
+        Task<AchievementDto> GetAchievementsByIdGame(string xuid, string titleId);
+        Task<AchievementDto> GetAchievementsByIdGame360(string xuid, string titleId);
     }
 }

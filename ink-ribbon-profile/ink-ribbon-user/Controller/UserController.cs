@@ -10,13 +10,13 @@ namespace ink_ribbon_profile.Controller
     {
         private readonly ILogger<UserController> _logger;
         private readonly ISteamUserSevice _steamUserSevice;
-        private readonly IXboxUserService _xboxUserService;
+        private readonly IXboxAchievementService _xboxAchievementService;
 
-        public UserController(ILogger<UserController> logger, ISteamUserSevice steamUserSevice, IXboxUserService xboxUserService)
+        public UserController(ILogger<UserController> logger, ISteamUserSevice steamUserSevice, IXboxAchievementService xboxAchievementService)
         {
             _logger = logger;
             _steamUserSevice = steamUserSevice;
-            _xboxUserService = xboxUserService;
+            _xboxAchievementService = xboxAchievementService;
         }
 
         [HttpGet("steam/GetSteamIdByName")]
@@ -36,20 +36,20 @@ namespace ink_ribbon_profile.Controller
             return Ok(user);
         }
 
-        [HttpGet("Xbox/GetXboxUser")]
-        public async Task<IActionResult> GetXboxUser(string gamertag)
+        [HttpGet("Xbox/GetAchievements")]
+        public async Task<IActionResult> GetAchievements()
         {
             //var command = new GetConditionsQuery(assetId);
-            var user = await _xboxUserService.GetUserByGameTag(gamertag);
+            var user = await _xboxAchievementService.GetAchievements();
 
             return Ok(user);
         }
 
-        [HttpGet("Xbox/GetXboxLastSeen")]
-        public async Task<IActionResult> GetXboxLastSeen(string xuid)
+        [HttpGet("Xbox/GetAchievementsById")]
+        public async Task<IActionResult> GetAchievementsById(string xuid)
         {
             //var command = new GetConditionsQuery(assetId);
-            var user = await _xboxUserService.GetLastSeenStatus(xuid);
+            var user = await _xboxAchievementService.GetAchievementsById(xuid);
 
             return Ok(user);
         }
