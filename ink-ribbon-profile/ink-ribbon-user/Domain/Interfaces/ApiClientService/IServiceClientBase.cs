@@ -1,4 +1,4 @@
-﻿namespace ink_ribbon_profile.Domain.Interfaces.ApiClientService
+﻿namespace ink_ribbon_profile_api.Domain.Interfaces.ApiClientService
 {
     public interface IServiceClientBase<TEntity> where TEntity : class
     {

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace ink_ribbon_profile.Application.Static
+namespace ink_ribbon_profile_api.Application.Static
 {
     public static class RunTimeConfig
     {

@@ -1,8 +1,8 @@
-﻿using ink_ribbon_profile.Domain.Interfaces.Services;
+﻿using ink_ribbon_profile_api.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ink_ribbon_profile.Controller
+namespace ink_ribbon_profile_api.Controller
 {
     [ApiController]
     [EnableCors("All")]

@@ -1,6 +1,6 @@
 ﻿using Microsoft.OpenApi.Models;
 
-namespace ink_ribbon_profile.Infra.Ioc.Swagger
+namespace ink_ribbon_profile_api.Infra.Ioc.Swagger
 {
     public class SwaggerConfiguration
     {

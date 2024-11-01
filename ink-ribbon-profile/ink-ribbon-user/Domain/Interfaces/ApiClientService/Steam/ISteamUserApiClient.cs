@@ -1,6 +1,6 @@
-﻿using ink_ribbon_profile.Domain.Dto.Steam;
+﻿using ink_ribbon_profile_api.Domain.Dto.Steam;
 
-namespace ink_ribbon_profile.Domain.Interfaces.ApiClientService.Steam
+namespace ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Steam
 {
     public interface ISteamUserNameApiClient : IServiceClientBase<SteamUserDto>
     {

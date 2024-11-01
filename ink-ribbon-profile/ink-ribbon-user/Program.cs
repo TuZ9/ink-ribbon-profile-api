@@ -1,9 +1,9 @@
 using Hangfire;
 using Hangfire.MemoryStorage;
-using ink_ribbon_profile.Application.Static;
-using ink_ribbon_profile.Infra.Extensions;
-using ink_ribbon_profile.Infra.Ioc.Hangfire;
-using ink_ribbon_profile.Infra.Ioc.Swagger;
+using ink_ribbon_profile_api.Application.Static;
+using ink_ribbon_profile_api.Infra.Extensions;
+using ink_ribbon_profile_api.Infra.Ioc.Hangfire;
+using ink_ribbon_profile_api.Infra.Ioc.Swagger;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Diagnostics;

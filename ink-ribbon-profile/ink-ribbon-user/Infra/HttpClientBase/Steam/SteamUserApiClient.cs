@@ -1,8 +1,8 @@
-﻿using ink_ribbon_profile.Application.Services;
-using ink_ribbon_profile.Domain.Dto.Steam;
-using ink_ribbon_profile.Domain.Interfaces.ApiClientService.Steam;
+﻿using ink_ribbon_profile_api.Application.Services;
+using ink_ribbon_profile_api.Domain.Dto.Steam;
+using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Steam;
 
-namespace ink_ribbon_profile.Infra.HttpClientBase.Steam
+namespace ink_ribbon_profile_api.Infra.HttpClientBase.Steam
 {
     public class SteamUserApiClient : ServiceClientBase<SteamUserDto, SteamUserApiClient>, ISteamUserApiClient
     {

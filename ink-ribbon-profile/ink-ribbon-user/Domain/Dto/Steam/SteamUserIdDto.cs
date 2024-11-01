@@ -1,4 +1,4 @@
-﻿namespace ink_ribbon_profile.Domain.Dto.Steam
+﻿namespace ink_ribbon_profile_api.Domain.Dto.Steam
 {
     public class SteamUserIdDto
     {

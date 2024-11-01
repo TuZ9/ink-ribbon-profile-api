@@ -1,4 +1,4 @@
-﻿namespace ink_ribbon_profile.Domain.Interfaces.Services
+﻿namespace ink_ribbon_profile_api.Domain.Interfaces.Services
 {
     public interface IUserService
     {

@@ -1,4 +1,4 @@
-﻿namespace ink_ribbon_profile.Application.Static
+﻿namespace ink_ribbon_profile_api.Application.Static
 {
     public class AWSConfiguration
     {

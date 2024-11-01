@@ -1,9 +1,9 @@
-﻿using ink_ribbon_profile.Application.Static;
-using ink_ribbon_profile.Domain.Dto.Xbox;
-using ink_ribbon_profile.Domain.Interfaces.ApiClientService.Xbox;
-using ink_ribbon_profile.Domain.Interfaces.Services;
+﻿using ink_ribbon_profile_api.Application.Static;
+using ink_ribbon_profile_api.Domain.Dto.Xbox;
+using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Xbox;
+using ink_ribbon_profile_api.Domain.Interfaces.Services;
 
-namespace ink_ribbon_profile.Application.Services
+namespace ink_ribbon_profile_api.Application.Services
 {
     public class XboxAchievementService : IXboxAchievementService
     {

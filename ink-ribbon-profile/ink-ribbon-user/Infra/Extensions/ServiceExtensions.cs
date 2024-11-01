@@ -1,7 +1,7 @@
-﻿using ink_ribbon_profile.Application.Services;
-using ink_ribbon_profile.Domain.Interfaces.Services;
+﻿using ink_ribbon_profile_api.Application.Services;
+using ink_ribbon_profile_api.Domain.Interfaces.Services;
 
-namespace ink_ribbon_profile.Infra.Extensions
+namespace ink_ribbon_profile_api.Infra.Extensions
 {
     public static class ServiceExtensions
     {

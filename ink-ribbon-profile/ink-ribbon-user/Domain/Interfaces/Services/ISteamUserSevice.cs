@@ -1,7 +1,7 @@
-﻿using ink_ribbon_profile.Domain.Dto.Steam;
-using ink_ribbon_profile.Domain.Entities;
+﻿using ink_ribbon_profile_api.Domain.Dto.Steam;
+using ink_ribbon_profile_api.Domain.Entities;
 
-namespace ink_ribbon_profile.Domain.Interfaces.Services
+namespace ink_ribbon_profile_api.Domain.Interfaces.Services
 {
     public interface ISteamUserSevice
     {

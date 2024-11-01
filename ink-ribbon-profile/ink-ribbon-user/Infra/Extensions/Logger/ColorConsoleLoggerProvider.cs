@@ -1,6 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
-namespace ink_ribbon_profile.Infra.Extensions.Logger
+namespace ink_ribbon_profile_api.Infra.Extensions.Logger
 {
     public sealed class ColorConsoleLoggerProvider : ILoggerProvider
     {

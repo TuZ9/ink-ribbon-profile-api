@@ -1,4 +1,4 @@
-﻿namespace ink_ribbon_profile.Domain.Entities
+﻿namespace ink_ribbon_profile_api.Domain.Entities
 {
     public class User
     {

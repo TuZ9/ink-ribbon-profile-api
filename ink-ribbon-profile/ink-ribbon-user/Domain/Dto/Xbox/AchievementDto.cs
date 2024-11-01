@@ -1,4 +1,4 @@
-﻿namespace ink_ribbon_profile.Domain.Dto.Xbox
+﻿namespace ink_ribbon_profile_api.Domain.Dto.Xbox
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class Achievement

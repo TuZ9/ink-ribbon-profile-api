@@ -1,4 +1,4 @@
-﻿namespace ink_ribbon_profile.Domain.Interfaces.Repositories
+﻿namespace ink_ribbon_profile_api.Domain.Interfaces.Repositories
 {
     public interface IBaseAuroraRepository<TEntity> where TEntity : class
     {

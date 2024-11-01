@@ -1,9 +1,9 @@
-﻿using ink_ribbon_profile.Domain.Interfaces.ApiClientService;
+﻿using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService;
 using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
 
-namespace ink_ribbon_profile.Application.Services
+namespace ink_ribbon_profile_api.Application.Services
 {
     public abstract class ServiceClientBase<TEntity, TYEntity> : IServiceClientBase<TEntity> where TEntity : class where TYEntity : class
     {
@@ -72,7 +72,7 @@ namespace ink_ribbon_profile.Application.Services
                 {
                     var contentStream = await httpResponseMessage.Content.ReadAsStreamAsync();
                     var result = JsonSerializer.Deserialize<TEntity>(contentStream);
-                    return result;
+                         return result;
                 }
             }
             catch (Exception ex)

@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>ink_ribbon_profile</RootNamespace>
+    <RootNamespace>ink_ribbon_profile_api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

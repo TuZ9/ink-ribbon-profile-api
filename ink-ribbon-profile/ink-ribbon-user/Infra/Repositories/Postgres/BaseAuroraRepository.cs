@@ -1,8 +1,8 @@
 ﻿using Dapper;
-using ink_ribbon_profile.Domain.Interfaces.Repositories;
-using ink_ribbon_profile.Infra.Context;
+using ink_ribbon_profile_api.Domain.Interfaces.Repositories;
+using ink_ribbon_profile_api.Infra.Context;
 
-namespace ink_ribbon_profile.Infra.Repositories.Postgres
+namespace ink_ribbon_profile_api.Infra.Repositories.Postgres
 {
     public class BaseAuroraRepository<TEntity> : IDisposable, IBaseAuroraRepository<TEntity> where TEntity : class
     {

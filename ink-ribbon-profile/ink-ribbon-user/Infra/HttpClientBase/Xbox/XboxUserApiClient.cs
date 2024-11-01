@@ -1,8 +1,8 @@
-﻿using ink_ribbon_profile.Application.Services;
-using ink_ribbon_profile.Domain.Dto.Xbox;
-using ink_ribbon_profile.Domain.Interfaces.ApiClientService.Xbox;
+﻿using ink_ribbon_profile_api.Application.Services;
+using ink_ribbon_profile_api.Domain.Dto.Xbox;
+using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Xbox;
 
-namespace ink_ribbon_profile.Infra.HttpClientBase.Xbox
+namespace ink_ribbon_profile_api.Infra.HttpClientBase.Xbox
 {
     public class XboxUserApiClient : ServiceClientBase<XboxUserDto, XboxUserApiClient>, IXboxUserApiClient
     {

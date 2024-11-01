@@ -1,7 +1,7 @@
 ﻿using Hangfire.Dashboard;
 using System.Diagnostics.CodeAnalysis;
 
-namespace ink_ribbon_profile.Infra.Ioc.Hangfire
+namespace ink_ribbon_profile_api.Infra.Ioc.Hangfire
 {
     public class HangfireAuthorizationFilter : IDashboardAuthorizationFilter
     {

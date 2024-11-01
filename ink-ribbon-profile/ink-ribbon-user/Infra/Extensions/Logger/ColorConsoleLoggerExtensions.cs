@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Configuration;
 
-namespace ink_ribbon_profile.Infra.Extensions.Logger
+namespace ink_ribbon_profile_api.Infra.Extensions.Logger
 {
     public static class ColorConsoleLoggerExtensions
     {

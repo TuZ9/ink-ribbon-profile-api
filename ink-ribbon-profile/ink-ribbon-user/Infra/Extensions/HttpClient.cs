@@ -1,10 +1,10 @@
-﻿using ink_ribbon_profile.Application.Static;
-using ink_ribbon_profile.Domain.Interfaces.ApiClientService.Steam;
-using ink_ribbon_profile.Domain.Interfaces.ApiClientService.Xbox;
-using ink_ribbon_profile.Infra.HttpClientBase.Steam;
-using ink_ribbon_profile.Infra.HttpClientBase.Xbox;
+﻿using ink_ribbon_profile_api.Application.Static;
+using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Steam;
+using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Xbox;
+using ink_ribbon_profile_api.Infra.HttpClientBase.Steam;
+using ink_ribbon_profile_api.Infra.HttpClientBase.Xbox;
 
-namespace ink_ribbon_profile.Infra.Extensions
+namespace ink_ribbon_profile_api.Infra.Extensions
 {
     public static class HttpClient
     {
