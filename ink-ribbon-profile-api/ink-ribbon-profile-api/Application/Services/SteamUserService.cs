@@ -32,11 +32,6 @@ namespace ink_ribbon_profile_api.Application.Services
             }
         }
 
-        public Task<SteamUser> GetSteamId()
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<SteamUserDto> GetSteamIdByName(string userName)
         {
             try

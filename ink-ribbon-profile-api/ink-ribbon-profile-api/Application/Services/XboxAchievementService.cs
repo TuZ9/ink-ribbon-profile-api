@@ -7,7 +7,7 @@ namespace ink_ribbon_profile_api.Application.Services
 {
     public class XboxAchievementService : IXboxAchievementService
     {
-        private readonly ILogger<IXboxAchievementService> _logger;
+        private readonly ILogger<XboxAchievementService> _logger;
         private readonly IXboxAchievementApiClient _xboxAchievementApiClient;
         public XboxAchievementService(ILogger<XboxAchievementService> logger, IXboxAchievementApiClient xboxAchievementApiClient)
         {
