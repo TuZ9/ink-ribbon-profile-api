@@ -1,0 +1,13 @@
+﻿using Hangfire.Dashboard;
+using System.Diagnostics.CodeAnalysis;
+
+namespace ink_ribbon_profile_consumer.Infra.Ioc.Hangfire
+{
+    public class HangfireAuthorizationFilter : IDashboardAuthorizationFilter
+    {
+        public bool Authorize([NotNull] DashboardContext context)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
