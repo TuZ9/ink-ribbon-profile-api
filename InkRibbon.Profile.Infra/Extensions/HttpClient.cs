@@ -3,6 +3,7 @@ using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Steam;
 using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Xbox;
 using ink_ribbon_profile_api.Infra.HttpClientBase.Steam;
 using ink_ribbon_profile_api.Infra.HttpClientBase.Xbox;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace ink_ribbon_profile_api.Infra.Extensions
 {

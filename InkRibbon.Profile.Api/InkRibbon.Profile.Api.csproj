@@ -9,9 +9,13 @@
 
   <ItemGroup>
     <Compile Remove="Application\AutoMapper\**" />
+    <Compile Remove="Infra\**" />
     <Content Remove="Application\AutoMapper\**" />
+    <Content Remove="Infra\**" />
     <EmbeddedResource Remove="Application\AutoMapper\**" />
+    <EmbeddedResource Remove="Infra\**" />
     <None Remove="Application\AutoMapper\**" />
+    <None Remove="Infra\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,9 +39,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Infra\Ioc\HealthCheck\" />
-    <Folder Include="Infra\Ioc\Serilog\" />
-    <Folder Include="Infra\Middleware\" />
+    <ProjectReference Include="..\InkRibbon.Profile.Application\InkRibbon.Profile.Application.csproj" />
+    <ProjectReference Include="..\InkRibbon.Profile.Domain\InkRibbon.Profile.Domain.csproj" />
+    <ProjectReference Include="..\InkRibbon.Profile.Infra\InkRibbon.Profile.Infra.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
 ﻿using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService;
+using Microsoft.Extensions.Logging;
 using System.Net.Mime;
 using System.Text;
 using System.Text.Json;

@@ -1,6 +1,7 @@
 ﻿using ink_ribbon_profile_api.Domain.Entities;
 using ink_ribbon_profile_api.Domain.Interfaces.Repositories;
 using ink_ribbon_profile_api.Infra.Context;
+using Microsoft.Extensions.Logging;
 
 namespace ink_ribbon_profile_api.Infra.Repositories.Postgres
 {

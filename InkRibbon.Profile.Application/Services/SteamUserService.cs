@@ -1,8 +1,8 @@
 ﻿using ink_ribbon_profile_api.Application.Static;
 using ink_ribbon_profile_api.Domain.Dto.Steam;
-using ink_ribbon_profile_api.Domain.Entities;
 using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Steam;
 using ink_ribbon_profile_api.Domain.Interfaces.Services;
+using Microsoft.Extensions.Logging;
 
 namespace ink_ribbon_profile_api.Application.Services
 {
