@@ -3,7 +3,7 @@ using ink_ribbon_profile_api.Domain.Entities;
 
 namespace ink_ribbon_profile_api.Domain.Interfaces.Services
 {
-    public interface ISteamUserSevice
+    public interface ISteamSevice
     {
         Task<SteamUserDto> GetSteamUserById(string steamId);
         Task<SteamUserDto> GetSteamIdByName(string userName);

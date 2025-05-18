@@ -4,14 +4,14 @@ using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Steam;
 using ink_ribbon_profile_api.Domain.Interfaces.Services;
 using Microsoft.Extensions.Logging;
 
-namespace ink_ribbon_profile_api.Application.Services
+namespace InkRibbon.Profile.Application.Services.Steam
 {
-    public class SteamUserService : ISteamUserSevice
+    public class SteamService : ISteamSevice
     {
-        private readonly ILogger<SteamUserService> _logger;
+        private readonly ILogger<SteamService> _logger;
         private readonly ISteamUserApiClient _steamClient;
 
-        public SteamUserService(ILogger<SteamUserService> logger, ISteamUserApiClient steamClient)
+        public SteamService(ILogger<SteamService> logger, ISteamUserApiClient steamClient)
         {
             _logger = logger;
             _steamClient = steamClient;
@@ -36,7 +36,7 @@ namespace ink_ribbon_profile_api.Application.Services
         {
             try
             {
-                var user = await _steamClient.GetAsync($"/ISteamUser/ResolveVanityURL/v0001/?key={RunTimeConfig.SteamKey}&vanityurl={userName}");
+                var user = await _steamClient.GetAsync($"/ISteamUser/ResolveVanityURL/v1/?key={RunTimeConfig.SteamKey}&vanityurl={userName}");
 
                 return user;
             }

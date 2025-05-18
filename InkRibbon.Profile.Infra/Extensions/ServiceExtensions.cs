@@ -1,5 +1,6 @@
-﻿using ink_ribbon_profile_api.Application.Services;
-using ink_ribbon_profile_api.Domain.Interfaces.Services;
+﻿using ink_ribbon_profile_api.Domain.Interfaces.Services;
+using InkRibbon.Profile.Application.Services.Steam;
+using InkRibbon.Profile.Application.Services.Xbox;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ink_ribbon_profile_api.Infra.Extensions
@@ -15,8 +16,8 @@ namespace ink_ribbon_profile_api.Infra.Extensions
         private static IServiceCollection RegisterServices(this IServiceCollection services)
         {
             return services
-                .AddScoped<ISteamUserSevice, SteamUserService>()
-                .AddScoped<IXboxAchievementService, XboxAchievementService>();
+                .AddScoped<ISteamSevice, SteamService>()
+                .AddScoped<IXboxService, XboxService>();
         }
     }
 }

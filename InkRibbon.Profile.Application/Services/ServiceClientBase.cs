@@ -97,13 +97,13 @@ namespace ink_ribbon_profile_api.Application.Services
                     var result = JsonSerializer.Deserialize<TEntity>(contentStream);
                     return result;
                 }
+                return null;
             }
             catch (Exception ex)
             {
                 _logger.LogError("Resourse Server {0} return an error {1}", url, ex.Message);
                 throw new Exception(ex.Message);
             }
-            return null;
         }
 
         public async Task<IEnumerable<TEntity>> GetListAsync(string url)

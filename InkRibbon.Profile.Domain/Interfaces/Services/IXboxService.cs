@@ -2,8 +2,9 @@
 
 namespace ink_ribbon_profile_api.Domain.Interfaces.Services
 {
-    public interface IXboxAchievementService
+    public interface IXboxService
     {
+        Task<XboxUserDto> GetXboxUserByGamertag(string gamertag);
         Task<AchievementDto> GetAchievementsById(string xuid);
         Task<AchievementDto> GetAchievements();
         Task<AchievementDto> GetAchievementsByIdGame(string xuid, string titleId);

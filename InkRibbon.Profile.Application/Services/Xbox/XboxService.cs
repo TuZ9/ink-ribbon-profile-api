@@ -4,13 +4,13 @@ using ink_ribbon_profile_api.Domain.Interfaces.ApiClientService.Xbox;
 using ink_ribbon_profile_api.Domain.Interfaces.Services;
 using Microsoft.Extensions.Logging;
 
-namespace ink_ribbon_profile_api.Application.Services
+namespace InkRibbon.Profile.Application.Services.Xbox
 {
-    public class XboxAchievementService : IXboxAchievementService
+    public class XboxService : IXboxService
     {
-        private readonly ILogger<XboxAchievementService> _logger;
+        private readonly ILogger<XboxService> _logger;
         private readonly IXboxAchievementApiClient _xboxAchievementApiClient;
-        public XboxAchievementService(ILogger<XboxAchievementService> logger, IXboxAchievementApiClient xboxAchievementApiClient)
+        public XboxService(ILogger<XboxService> logger, IXboxAchievementApiClient xboxAchievementApiClient)
         {
             _logger = logger;
             _xboxAchievementApiClient = xboxAchievementApiClient;
